@@ -24,20 +24,19 @@ Proyek ini terdiri dari dua file Python utama:
 * *Anti-Typo Case Insensitive:* Pengguna bisa menjawab dengan huruf besar maupun kecil (contoh: !jawab rusia atau !jawab Rusia tetap dianggap benar).
 
 ---
-
 ## 🎮 Cara Menggunakan di Discord
 
 1. *Memulai Kuis*
    Ketik perintah berikut di channel Discord untuk mengeluarkan soal secara acak:
    ```text
-   !kuis
+   !quiz [nama pemain yang didaftarkan]
 Bot akan memunculkan kotak pertanyaan beserta opsi jawaban.
 
 2. Menjawab Kuis
    Lihat pilihan jawaban yang ada, lalu ketik perintah diikuti dengan nama negaranya secara langsung:
 
    Plaintext
-   !jawab [Nama Negara]
+   !jawab [Opsi Jawaan Nama Negara]
    Contoh: !jawab Singapura atau !jawab Vatikan
 
 💻 Cara Menjalankan Proyek (Bagi Pengembang)
@@ -51,3 +50,26 @@ Jalankan file main.py:
 
 Bash
 python main.py
+
+3.Score
+   Untuk melihat Score jawaban anda, ketik Perintah berikut:
+
+   Plaintext
+   !Score [Menampilkan papan score]
+   !Score [...]
+Bot akan memunculkan papan socre
+
+#Help
+   Untuk melihat seluruh command yang ada, silahkan ketik perintah berikut:
+
+   Plaintext
+   teks_bantuan = (
+        "*DAFTAR PERINTAH BOT KUIS*\n\n"
+        "!kuis [Nama] - Mulai kuis satu list penuh (Contoh: !kuis Yogi)\n"
+        "!jawab [Jawaban] - Jawab soal yang muncul (Contoh: !jawab Rusia)\n"
+        "!skor - Lihat papan peringkat poin semua pemain\n"
+        "!help - Melihat menu bantuan ini"
+    )
+Selamat mencoba
+   
+   
